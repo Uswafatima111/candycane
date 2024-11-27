@@ -1,0 +1,144 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ADD8E6; /* Light Blue background */
+    color: #0A1F44; /* Darker Blue text for contrast */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #1E3A5F; /* Dark Blue background */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF; /* White text for the name */
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White text for links */
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ADD8E6; /* Light Blue on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+    background-color: #FFFFFF; /* White background for sections */
+    margin-bottom: 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #1E3A5F; /* Dark Blue for section headings */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #0A1F44; /* Darker Blue text for paragraphs */
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+ul li {
+    font-weight: bold;
+    background-color: #0A1F44; /* Darker Blue background for skill items */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #FFFFFF; /* White text */
+}
+
+.project {
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #1E3A5F; /* Dark Blue for project boxes */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    color: #FFFFFF; /* White text for project titles */
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0A1F44; /* Darker Blue background */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    color: #ADD8E6; /* Light Blue text for footer */
+    font-size: 1rem;
+}
+
+a {
+    color: #1E3A5F; /* Dark Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .project {
+        padding: 20px;
+    }
+}
